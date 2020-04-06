@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#CD455E"
+        android:textAlignment="center"
+        android:id="@+id/txtJugador">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="El ganador es:"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/txtGanador">
+    </TextView>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:id="@+id/x2y2">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/x2y2"
+        android:id="@+id/x2y1">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/x2y2"
+        android:id="@+id/x2y3">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/x2y2"
+        android:layout_centerVertical="true"
+        android:id="@+id/x1y2">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/x2y2"
+        android:layout_centerVertical="true"
+        android:id="@+id/x3y2">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_above="@id/x1y2"
+        android:layout_toLeftOf="@id/x2y2"
+        android:id="@+id/x1y1">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_below="@id/x1y2"
+        android:layout_toLeftOf="@id/x2y2"
+        android:id="@+id/x1y3">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_above="@id/x3y2"
+        android:layout_toRightOf="@id/x2y2"
+        android:id="@+id/x3y1">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_below="@id/x1y2"
+        android:layout_toRightOf="@id/x2y2"
+        android:id="@+id/x3y3">
+    </Button>
+
+    <ImageView
+        android:src="@drawable/back"
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/txtGanador"
+        android:layout_below="@id/x1y3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:width="50dp"
+        android:height="50dp">
+    </ImageView>
+
+    <ImageView
+        android:src="@drawable/close"
+        android:id="@+id/btnClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/txtGanador"
+        android:layout_below="@id/x3y3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:width="50dp"
+        android:height="50dp">
+    </ImageView>
+</RelativeLayout>
